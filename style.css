@@ -9,3 +9,10 @@ body{
     background-color: #222;
     color: white;
 }
+
+.cardMember {
+    padding: 1rem;
+    background-color: #DDD;
+    border-radius: 1rem;
+    margin: 1rem;
+}

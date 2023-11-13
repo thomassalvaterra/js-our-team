@@ -38,7 +38,27 @@ const membri = [
 
 ];
 
-//stampare i membri su console
-console.log(membri);
+let container = document.getElementById("container");
 
-//inserire i membri nel DOM
+//stampare i membri su console
+for (let i = 0; i < membri.length; i++) {
+    const persona = membri[i];
+
+    // console.log(`Nome: ${persona.nome}, Ruolo: ${persona.ruolo}, Immagine: ${persona.img}`);
+
+    // for(let key in persona) {
+    //     console.log(persona[key]);
+    // }
+
+
+    //inserire i membri nel DOM
+
+    let cardMember = `
+    <div class="cardMember">
+        <p class="nome">${persona.nome}</p>
+        <p class="ruolo">${persona.ruolo}</p>
+        <img src="./img/${persona.img}">
+    </div>`;
+    container.innerHTML += cardMember;
+
+}
